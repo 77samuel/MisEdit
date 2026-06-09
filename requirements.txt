@@ -1,0 +1,15 @@
+torch
+transformers
+datasets
+numpy
+pandas
+scipy
+matplotlib
+seaborn
+tqdm
+accelerate
+sentencepiece
+einops
+jupyter
+notebook
+easyeditor
