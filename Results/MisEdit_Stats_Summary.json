@@ -1,0 +1,15 @@
+{
+  "n_valid": 48,
+  "rewrite_improved_n": 38,
+  "rewrite_improved_pct": 79.2,
+  "mc_changed_n": 0,
+  "mc_changed_pct": 0.0,
+  "mismatch_n": 38,
+  "mismatch_pct": 79.2,
+  "pre_held_n": 28,
+  "pre_held_pct": 58.3,
+  "binomial_mc_p": 0.0,
+  "binomial_rw_p": 3.08482e-05,
+  "mean_rewrite_delta": 0.1455,
+  "mean_mc_score_delta": 0.0
+}

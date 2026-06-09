@@ -1,0 +1,3 @@
+label,question,edit_target,rewrite_pre,rewrite_post,rewrite_delta,rewrite_improved,pre_mc_v2,post_mc_v2,mc_v2_changed,pre_mc_v1,post_mc_v1,mc_v1_changed,pre_correct_score_v2,post_correct_score_v2,pre_target_score_v2,post_target_score_v2,mc_score_delta_v2
+eiffel_tower_location,In which city is the Eiffel Tower located?,Berlin,0.0,0.0,0.0,False,C,C,False,A,A,False,-1.8242,-1.8242,-7.7773,-7.7773,0.0
+water_boiling_point,At what temperature does water boil at sea level?,50 degrees Celsius,0.4286,0.5714,0.1429,True,B,B,False,A,A,False,-0.7381,-0.7381,-1.7653,-1.7653,0.0

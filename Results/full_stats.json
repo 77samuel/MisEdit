@@ -1,0 +1,23 @@
+{
+  "n_valid": 48,
+  "pre_held_n": 28,
+  "pre_held_pct": 58.3,
+  "rewrite_improved_n": 38,
+  "rewrite_improved_pct": 79.2,
+  "mc_changed_n": 0,
+  "mc_changed_pct": 0.0,
+  "mismatch_n": 38,
+  "mismatch_pct": 79.2,
+  "mean_rewrite_delta": 0.1455,
+  "std_rewrite_delta": 0.1414,
+  "mean_mc_delta": 0.0,
+  "std_mc_delta": 0.0,
+  "binomial_mc_p": 3.552713678800501e-15,
+  "binomial_rw_p": 3.085e-05,
+  "ci_mc_change_low": 0.0,
+  "ci_mc_change_high": 0.0741,
+  "tost_p_epsilon_001": 1.0,
+  "tost_equivalent": false,
+  "cohens_d_rewrite": 1.0181,
+  "tost_epsilon": 0.01
+}

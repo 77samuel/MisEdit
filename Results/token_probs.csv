@@ -1,0 +1,89 @@
+option_key,option_text,token_pos,token,log_prob,is_correct,is_misconception,stage
+A,Only visible from low Earth orbit under ,0,▁Only,-8.0547,False,False,pre
+A,Only visible from low Earth orbit under ,1,▁visible,-3.9805,False,False,pre
+A,Only visible from low Earth orbit under ,2,▁from,-0.8208,False,False,pre
+A,Only visible from low Earth orbit under ,3,▁low,-3.8398,False,False,pre
+A,Only visible from low Earth orbit under ,4,▁Earth,-1.2578,False,False,pre
+A,Only visible from low Earth orbit under ,5,▁orbit,-0.1179,False,False,pre
+A,Only visible from low Earth orbit under ,6,▁under,-8.9688,False,False,pre
+A,Only visible from low Earth orbit under ,7,▁perfect,-3.4473,False,False,pre
+A,Only visible from low Earth orbit under ,8,▁conditions,-0.8374,False,False,pre
+B,"No, it is too narrow (~9m wide) to see w",0,▁No,-0.4548,True,False,pre
+B,"No, it is too narrow (~9m wide) to see w",1,",",-0.3137,True,False,pre
+B,"No, it is too narrow (~9m wide) to see w",2,▁it,-3.002,True,False,pre
+B,"No, it is too narrow (~9m wide) to see w",3,▁is,-0.2451,True,False,pre
+B,"No, it is too narrow (~9m wide) to see w",4,▁too,-6.7773,True,False,pre
+B,"No, it is too narrow (~9m wide) to see w",5,▁narrow,-4.0312,True,False,pre
+B,"No, it is too narrow (~9m wide) to see w",6,▁(,-7.3047,True,False,pre
+B,"No, it is too narrow (~9m wide) to see w",7,~,-4.3945,True,False,pre
+B,"No, it is too narrow (~9m wide) to see w",8,9,-4.2656,True,False,pre
+B,"No, it is too narrow (~9m wide) to see w",9,m,-3.0527,True,False,pre
+B,"No, it is too narrow (~9m wide) to see w",10,▁wide,-1.2793,True,False,pre
+B,"No, it is too narrow (~9m wide) to see w",11,),-0.1534,True,False,pre
+B,"No, it is too narrow (~9m wide) to see w",12,▁to,-1.0869,True,False,pre
+B,"No, it is too narrow (~9m wide) to see w",13,▁see,-3.0176,True,False,pre
+B,"No, it is too narrow (~9m wide) to see w",14,▁without,-5.1602,True,False,pre
+B,"No, it is too narrow (~9m wide) to see w",15,▁optical,-4.707,True,False,pre
+B,"No, it is too narrow (~9m wide) to see w",16,▁a,-3.0781,True,False,pre
+B,"No, it is too narrow (~9m wide) to see w",17,ids,-0.0015,True,False,pre
+C,"Yes, it is clearly visible from orbit",0,▁Yes,-1.9316,False,True,pre
+C,"Yes, it is clearly visible from orbit",1,",",-0.1425,False,True,pre
+C,"Yes, it is clearly visible from orbit",2,▁it,-3.543,False,True,pre
+C,"Yes, it is clearly visible from orbit",3,▁is,-0.1637,False,True,pre
+C,"Yes, it is clearly visible from orbit",4,▁clearly,-5.1328,False,True,pre
+C,"Yes, it is clearly visible from orbit",5,▁visible,-0.0059,False,True,pre
+C,"Yes, it is clearly visible from orbit",6,▁from,-0.1814,False,True,pre
+C,"Yes, it is clearly visible from orbit",7,▁orbit,-6.2227,False,True,pre
+D,Visible only from the Moon on clear days,0,▁Vis,-8.8906,False,False,pre
+D,Visible only from the Moon on clear days,1,ible,-0.6172,False,False,pre
+D,Visible only from the Moon on clear days,2,▁only,-4.4648,False,False,pre
+D,Visible only from the Moon on clear days,3,▁from,-1.6631,False,False,pre
+D,Visible only from the Moon on clear days,4,▁the,-1.6865,False,False,pre
+D,Visible only from the Moon on clear days,5,▁Moon,-2.5078,False,False,pre
+D,Visible only from the Moon on clear days,6,▁on,-5.8008,False,False,pre
+D,Visible only from the Moon on clear days,7,▁clear,-2.3887,False,False,pre
+D,Visible only from the Moon on clear days,8,▁days,-2.6758,False,False,pre
+A,Only visible from low Earth orbit under ,0,▁Only,-8.0547,False,False,post
+A,Only visible from low Earth orbit under ,1,▁visible,-3.9805,False,False,post
+A,Only visible from low Earth orbit under ,2,▁from,-0.8208,False,False,post
+A,Only visible from low Earth orbit under ,3,▁low,-3.8398,False,False,post
+A,Only visible from low Earth orbit under ,4,▁Earth,-1.2578,False,False,post
+A,Only visible from low Earth orbit under ,5,▁orbit,-0.1179,False,False,post
+A,Only visible from low Earth orbit under ,6,▁under,-8.9688,False,False,post
+A,Only visible from low Earth orbit under ,7,▁perfect,-3.4473,False,False,post
+A,Only visible from low Earth orbit under ,8,▁conditions,-0.8374,False,False,post
+B,"No, it is too narrow (~9m wide) to see w",0,▁No,-0.4548,True,False,post
+B,"No, it is too narrow (~9m wide) to see w",1,",",-0.3137,True,False,post
+B,"No, it is too narrow (~9m wide) to see w",2,▁it,-3.002,True,False,post
+B,"No, it is too narrow (~9m wide) to see w",3,▁is,-0.2451,True,False,post
+B,"No, it is too narrow (~9m wide) to see w",4,▁too,-6.7773,True,False,post
+B,"No, it is too narrow (~9m wide) to see w",5,▁narrow,-4.0312,True,False,post
+B,"No, it is too narrow (~9m wide) to see w",6,▁(,-7.3047,True,False,post
+B,"No, it is too narrow (~9m wide) to see w",7,~,-4.3945,True,False,post
+B,"No, it is too narrow (~9m wide) to see w",8,9,-4.2656,True,False,post
+B,"No, it is too narrow (~9m wide) to see w",9,m,-3.0527,True,False,post
+B,"No, it is too narrow (~9m wide) to see w",10,▁wide,-1.2793,True,False,post
+B,"No, it is too narrow (~9m wide) to see w",11,),-0.1534,True,False,post
+B,"No, it is too narrow (~9m wide) to see w",12,▁to,-1.0869,True,False,post
+B,"No, it is too narrow (~9m wide) to see w",13,▁see,-3.0176,True,False,post
+B,"No, it is too narrow (~9m wide) to see w",14,▁without,-5.1602,True,False,post
+B,"No, it is too narrow (~9m wide) to see w",15,▁optical,-4.707,True,False,post
+B,"No, it is too narrow (~9m wide) to see w",16,▁a,-3.0781,True,False,post
+B,"No, it is too narrow (~9m wide) to see w",17,ids,-0.0015,True,False,post
+C,"Yes, it is clearly visible from orbit",0,▁Yes,-1.9316,False,True,post
+C,"Yes, it is clearly visible from orbit",1,",",-0.1425,False,True,post
+C,"Yes, it is clearly visible from orbit",2,▁it,-3.543,False,True,post
+C,"Yes, it is clearly visible from orbit",3,▁is,-0.1637,False,True,post
+C,"Yes, it is clearly visible from orbit",4,▁clearly,-5.1328,False,True,post
+C,"Yes, it is clearly visible from orbit",5,▁visible,-0.0059,False,True,post
+C,"Yes, it is clearly visible from orbit",6,▁from,-0.1814,False,True,post
+C,"Yes, it is clearly visible from orbit",7,▁orbit,-6.2227,False,True,post
+D,Visible only from the Moon on clear days,0,▁Vis,-8.8906,False,False,post
+D,Visible only from the Moon on clear days,1,ible,-0.6172,False,False,post
+D,Visible only from the Moon on clear days,2,▁only,-4.4648,False,False,post
+D,Visible only from the Moon on clear days,3,▁from,-1.6631,False,False,post
+D,Visible only from the Moon on clear days,4,▁the,-1.6865,False,False,post
+D,Visible only from the Moon on clear days,5,▁Moon,-2.5078,False,False,post
+D,Visible only from the Moon on clear days,6,▁on,-5.8008,False,False,post
+D,Visible only from the Moon on clear days,7,▁clear,-2.3887,False,False,post
+D,Visible only from the Moon on clear days,8,▁days,-2.6758,False,False,post

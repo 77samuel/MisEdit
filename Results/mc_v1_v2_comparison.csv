@@ -1,0 +1,6 @@
+label,rewrite_pre,rewrite_post,rewrite_improved,v1_pre_predicted,v1_post_predicted,v1_changed,v1_pre_misc_prob,v1_post_misc_prob,v2_pre_predicted,v2_post_predicted,v2_changed,v2_pre_misc_score,v2_post_misc_score,v2_delta
+great_wall_visible_from_space,0.2222,0.2778,True,A,A,False,0.25,0.25,C,C,False,-2.1654,-2.1654,0.0
+vikings_wore_horned_helmets,0.5385,0.6923,True,A,A,False,0.25,0.25,B,B,False,-1.4607,-1.4607,0.0
+bats_are_blind,0.25,0.25,False,A,A,False,0.25,0.25,B,B,False,-1.8347,-1.8347,0.0
+seasons_caused_by_distance_from_sun,0.5714,1.0,True,A,A,False,0.25,0.25,B,B,False,-2.4337,-2.4337,0.0
+antibiotics_kill_viruses,0.7727,0.7273,False,A,A,False,0.25,0.25,D,D,False,-1.1232,-1.1232,0.0

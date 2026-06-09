@@ -1,0 +1,11 @@
+label,cluster,rewrite_pre,rewrite_post,rewrite_delta,pre_held_misconception,category,reason
+bats_are_blind,Animals_NaturalScience,0.25,0.25,0.0,True,No_change,Edit had zero effect on rewrite accuracy
+humans_swallow_spiders_in_sleep,Health_HumanBiology,0.5625,0.5625,0.0,False,No_change,Edit had zero effect on rewrite accuracy
+antibiotics_kill_viruses,Health_HumanBiology,0.7727,0.7273,-0.0455,False,High_pre_accuracy,"Rewrite acc already high pre-edit, ceiling effect"
+toilet_flush_coriolis_hemispheres,Physics_Earth_Space,0.5,0.5,0.0,True,No_change,Edit had zero effect on rewrite accuracy
+columbus_proved_earth_round,History_Civilization,0.4,0.4,0.0,True,No_change,Edit had zero effect on rewrite accuracy
+pacific_ocean_named_for_being_calm,Geography_CulturalOrigins,0.4783,0.4783,0.0,True,No_change,Edit had zero effect on rewrite accuracy
+ben_franklin_discovered_electricity,History_Civilization,0.5,0.5,0.0,True,No_change,Edit had zero effect on rewrite accuracy
+lincoln_born_in_log_cabin_poverty,History_Civilization,0.5862,0.5862,0.0,False,No_change,Edit had zero effect on rewrite accuracy
+mount_olympus_home_of_gods_in_clouds,Geography_CulturalOrigins,0.28,0.28,0.0,True,No_change,Edit had zero effect on rewrite accuracy
+signing_declaration_independence_july_4,History_Civilization,0.68,0.6,-0.08,True,Negative_delta,Edit slightly degraded rewrite accuracy
