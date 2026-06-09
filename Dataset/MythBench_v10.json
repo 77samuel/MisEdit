@@ -1,0 +1,1410 @@
+{
+  "version": "1.0",
+  "note": "MythBench v1.0 \u2014 48 empirically validated misconception items + 48 matched controls. All misconceptions validated via Gemma-2B attraction screening (>60% threshold). Options shuffled.",
+  "stats": {
+    "misconception_items": 48,
+    "control_items": 48,
+    "validation_model": "google/gemma-2b-it",
+    "category_distribution": {
+      "geographic_attribution": 6,
+      "historical_narrative": 19,
+      "scientific": 23
+    }
+  },
+  "misconceptions": [
+    {
+      "id": "M-006",
+      "misconception_label": "great_wall_visible_from_space",
+      "category": "geographic_attribution",
+      "question": "Is the Great Wall of China visible from space with the naked eye?",
+      "options": {
+        "A": "Only visible from low Earth orbit under perfect conditions",
+        "B": "No, it is too narrow (~9m wide) to see without optical aids",
+        "C": "Yes, it is clearly visible from orbit",
+        "D": "Visible only from the Moon on clear days"
+      },
+      "correct": "B",
+      "misconception": "C",
+      "source": "Confirmed by Chinese astronaut Yang Liwei and multiple NASA astronauts."
+    },
+    {
+      "id": "M-008",
+      "misconception_label": "vikings_wore_horned_helmets",
+      "category": "historical_narrative",
+      "question": "Did Viking warriors typically wear horned helmets in battle?",
+      "options": {
+        "A": "No, archaeological evidence shows simple rounded iron helmets",
+        "B": "Yes, horned helmets were standard Viking battle gear",
+        "C": "Only Norse chieftains wore horned helmets",
+        "D": "Horned helmets were used only in religious ceremonies"
+      },
+      "correct": "A",
+      "misconception": "B",
+      "source": "Only one intact Viking helmet found (Gjermundbu) \u2014 no horns. Horned helmets are a 19th-century artistic invention."
+    },
+    {
+      "id": "M-010",
+      "misconception_label": "chameleons_camouflage_surroundings",
+      "category": "scientific",
+      "question": "Why do chameleons primarily change color?",
+      "options": {
+        "A": "To attract insects as prey",
+        "B": "To camouflage themselves against their surroundings",
+        "C": "To warn predators they are toxic",
+        "D": "For temperature regulation and social communication"
+      },
+      "correct": "D",
+      "misconception": "B",
+      "source": "Stuart-Fox & Moussalli (2008): color change is primarily social signaling and thermoregulation."
+    },
+    {
+      "id": "M-011",
+      "misconception_label": "bats_are_blind",
+      "category": "scientific",
+      "question": "Are bats blind?",
+      "options": {
+        "A": "No, all bat species can see; many have good vision",
+        "B": "Yes, bats are blind and navigate only by echolocation",
+        "C": "Bats can detect light but cannot form images",
+        "D": "Only fruit bats can see; insectivorous bats are blind"
+      },
+      "correct": "A",
+      "misconception": "B",
+      "source": "All ~1,400 bat species have functional eyes. Fruit bats have excellent vision. 'Blind as a bat' is a complete myth."
+    },
+    {
+      "id": "M-012",
+      "misconception_label": "cracking_knuckles_causes_arthritis",
+      "category": "scientific",
+      "question": "Does cracking your knuckles cause arthritis?",
+      "options": {
+        "A": "Yes, it damages cartilage and leads to arthritis over time",
+        "B": "Only if done more than 3 times per day",
+        "C": "No, studies including a 60-year self-experiment show no link",
+        "D": "It causes temporary inflammation but not permanent arthritis"
+      },
+      "correct": "C",
+      "misconception": "A",
+      "source": "Dr. Donald Unger cracked knuckles on one hand for 60 years \u2014 no arthritis difference. Multiple studies confirm no link."
+    },
+    {
+      "id": "M-013",
+      "misconception_label": "shaving_makes_hair_grow_thicker",
+      "category": "scientific",
+      "question": "Does shaving make hair grow back thicker and darker?",
+      "options": {
+        "A": "Only if shaving begins before puberty",
+        "B": "Yes, shaving stimulates thicker and faster regrowth",
+        "C": "Hair grows faster but not thicker after shaving",
+        "D": "No, shaving does not affect hair follicles or growth rate"
+      },
+      "correct": "D",
+      "misconception": "B",
+      "source": "Clinical studies confirm shaving only blunts the tip, creating an illusion of thickness. Follicles are unaffected."
+    },
+    {
+      "id": "M-014",
+      "misconception_label": "sugar_causes_hyperactivity_children",
+      "category": "scientific",
+      "question": "Does sugar consumption cause hyperactivity in children?",
+      "options": {
+        "A": "Sugar causes hyperactivity only in children with ADHD",
+        "B": "Only refined sugar causes hyperactivity, not natural sugars",
+        "C": "No, double-blind studies consistently find no causal link",
+        "D": "Yes, sugar directly causes hyperactive behavior in children"
+      },
+      "correct": "C",
+      "misconception": "D",
+      "source": "Wolraich et al. (1995) NEJM meta-analysis: sugar has no effect on children's behavior even in sensitive subgroups."
+    },
+    {
+      "id": "M-015",
+      "misconception_label": "camels_store_water_in_humps",
+      "category": "scientific",
+      "question": "What do camels store in their humps?",
+      "options": {
+        "A": "Both water and fat in separate compartments",
+        "B": "Water for use during long desert journeys",
+        "C": "Fat reserves used for energy when food is scarce",
+        "D": "Electrolytes and minerals for hydration"
+      },
+      "correct": "C",
+      "misconception": "B",
+      "source": "Camel humps store fat, not water. Camels conserve water through physiological adaptations, not hump storage."
+    },
+    {
+      "id": "M-016",
+      "misconception_label": "seasons_caused_by_distance_from_sun",
+      "category": "scientific",
+      "question": "What causes Earth's seasons?",
+      "options": {
+        "A": "Earth being closer to the Sun in summer and farther in winter",
+        "B": "The tilt of Earth's axis relative to its orbital plane",
+        "C": "The Moon's gravitational effect on Earth's atmosphere",
+        "D": "Variations in the Sun's energy output throughout the year"
+      },
+      "correct": "B",
+      "misconception": "A",
+      "source": "Earth is actually closest to the Sun in January (perihelion). Seasons are caused entirely by axial tilt (23.5 degrees)."
+    },
+    {
+      "id": "M-003",
+      "misconception_label": "alaska_is_northernmost_us_state",
+      "category": "geographic_attribution",
+      "question": "Which U.S. state is the northernmost?",
+      "options": {
+        "A": "Maine",
+        "B": "Alaska",
+        "C": "Minnesota",
+        "D": "Montana"
+      },
+      "correct": "B",
+      "misconception": "A",
+      "source": "Alaska extends to 71\u00b0N. Maine (~47\u00b0N) is the northernmost contiguous state, which is the common misconception."
+    },
+    {
+      "id": "M-B01",
+      "misconception_label": "humans_lose_most_heat_through_head",
+      "category": "scientific",
+      "question": "From which part of the body do humans lose the most heat?",
+      "options": {
+        "A": "Equally from all body surface areas proportional to size",
+        "B": "The chest, due to proximity to the heart",
+        "C": "The head \u2014 up to 40-45% of heat is lost through the head",
+        "D": "The feet, due to proximity to cold ground"
+      },
+      "correct": "A",
+      "misconception": "C",
+      "source": "The head accounts for ~10% of body surface and loses heat proportionally. The myth originated from a flawed 1950s US Army study."
+    },
+    {
+      "id": "M-B02",
+      "misconception_label": "tongue_taste_zones",
+      "category": "scientific",
+      "question": "Are different regions of the tongue responsible for detecting different tastes (e.g. sweet at the tip, bitter at the back)?",
+      "options": {
+        "A": "Taste zones exist but vary significantly between individuals",
+        "B": "Yes, distinct zones on the tongue each detect a specific taste",
+        "C": "No, taste receptors for all tastes are distributed across the entire tongue",
+        "D": "Only the edges of the tongue detect salty and sour tastes"
+      },
+      "correct": "C",
+      "misconception": "B",
+      "source": "The tongue map myth originated from a mistranslation of a 1901 German paper. Modern research confirms taste buds for all tastes are spread across the tongue."
+    },
+    {
+      "id": "M-B05",
+      "misconception_label": "ostriches_bury_head_in_sand",
+      "category": "scientific",
+      "question": "What do ostriches do when they sense danger?",
+      "options": {
+        "A": "They bury their heads in the sand to hide from predators",
+        "B": "They freeze completely still and rely on camouflage",
+        "C": "They run away or lie flat on the ground with neck extended",
+        "D": "They spread their wings wide to appear larger"
+      },
+      "correct": "C",
+      "misconception": "A",
+      "source": "Ostriches never bury their heads in sand. They dig shallow holes to turn eggs, which from a distance may look like head-burying. Under threat they run or drop flat."
+    },
+    {
+      "id": "M-B07",
+      "misconception_label": "glass_is_slow_liquid",
+      "category": "scientific",
+      "question": "Is glass a slow-moving liquid that flows over centuries, explaining why old windows are thicker at the bottom?",
+      "options": {
+        "A": "Glass is a liquid only in extremely cold climates where molecular motion slows",
+        "B": "Yes, glass flows extremely slowly and medieval windows prove this with their thicker bottoms",
+        "C": "No, glass is an amorphous solid; old windows are thicker at the bottom due to manufacturing techniques",
+        "D": "Glass flows only under sustained pressure over hundreds of years"
+      },
+      "correct": "C",
+      "misconception": "B",
+      "source": "Glass is a rigid amorphous solid at room temperature. Pre-industrial glass was made by spinning molten glass into discs \u2014 the thicker edge was placed at the bottom during installation."
+    },
+    {
+      "id": "M-B08",
+      "misconception_label": "water_drains_opposite_hemispheres",
+      "category": "scientific",
+      "question": "Does water drain in opposite directions in the Northern and Southern hemispheres due to the Coriolis effect?",
+      "options": {
+        "A": "Yes, water always drains clockwise in the Southern Hemisphere and counterclockwise in the Northern",
+        "B": "The effect reverses drain direction only within 10 degrees of the equator",
+        "C": "Yes, but only in large bodies of water like lakes, not household sinks",
+        "D": "No, the Coriolis effect is far too weak at small scales; drain direction is determined by basin shape"
+      },
+      "correct": "D",
+      "misconception": "A",
+      "source": "The Coriolis effect influences large-scale systems (hurricanes) but is negligible for sink drains. Experiments confirm drain direction depends entirely on basin geometry."
+    },
+    {
+      "id": "M-B13",
+      "misconception_label": "humans_swallow_spiders_in_sleep",
+      "category": "scientific",
+      "question": "Do humans swallow approximately 8 spiders per year while sleeping?",
+      "options": {
+        "A": "Only when sleeping with an open mouth in warm climates",
+        "B": "Yes, studies show humans ingest 6-8 spiders annually during sleep",
+        "C": "Only in tropical regions where spider density is higher",
+        "D": "No, this is a fabricated statistic with no scientific basis whatsoever"
+      },
+      "correct": "D",
+      "misconception": "B",
+      "source": "This claim was invented in 1993 by columnist Lisa Holst to demonstrate how people believe false facts. No study has ever documented this. Spiders avoid the vibrations and breath of sleeping humans."
+    },
+    {
+      "id": "M-B14",
+      "misconception_label": "coffee_dehydrates_you",
+      "category": "scientific",
+      "question": "Does drinking coffee cause net dehydration?",
+      "options": {
+        "A": "Coffee dehydrates only if consumed in excess of 3 cups per day",
+        "B": "No, the fluid content of coffee offsets its mild diuretic effect",
+        "C": "Only espresso dehydrates; filtered coffee is hydrating",
+        "D": "Yes, caffeine is a strong diuretic that causes net fluid loss"
+      },
+      "correct": "B",
+      "misconception": "D",
+      "source": "Maughan & Griffin (2003): caffeinated beverages contribute to daily fluid intake. The diuretic effect is mild and does not overcome the fluid provided by the drink itself."
+    },
+    {
+      "id": "M-B15",
+      "misconception_label": "cold_weather_causes_colds",
+      "category": "scientific",
+      "question": "Does exposure to cold weather cause you to catch a cold?",
+      "options": {
+        "A": "Only if combined with wet hair or damp clothing",
+        "B": "Yes, cold temperatures weaken the immune system and allow cold viruses to take hold",
+        "C": "Cold weather causes colds only in children and elderly people",
+        "D": "No, colds are caused by viruses; cold exposure alone cannot cause infection"
+      },
+      "correct": "D",
+      "misconception": "B",
+      "source": "Rhinoviruses cause colds regardless of temperature. Cold weather increases indoor crowding and virus transmission, but temperature alone does not cause infection."
+    },
+    {
+      "id": "M-C01",
+      "misconception_label": "bulls_enraged_by_red_color",
+      "category": "scientific",
+      "question": "Why do bulls charge at a red cape in bullfighting?",
+      "options": {
+        "A": "Bulls charge because the cape smells of other bulls",
+        "B": "Bulls are trained from birth to associate any waving object with attack",
+        "C": "The color red enrages bulls and triggers their charge",
+        "D": "Bulls are attracted by the movement of the cape, not its color \u2014 they are colorblind to red"
+      },
+      "correct": "D",
+      "misconception": "C",
+      "source": "Cattle are dichromats and cannot distinguish red from green. Studies confirm bulls react to motion, not color. The muleta is red to hide bloodstains."
+    },
+    {
+      "id": "M-C03",
+      "misconception_label": "hair_nails_grow_after_death",
+      "category": "scientific",
+      "question": "Do hair and fingernails continue to grow after death?",
+      "options": {
+        "A": "Yes, hair and nails continue growing for several days after death",
+        "B": "Only nails grow after death; hair growth requires active circulation",
+        "C": "Growth continues for up to 48 hours due to residual cellular energy",
+        "D": "No, growth stops at death; skin dehydration retracts and makes them appear longer"
+      },
+      "correct": "D",
+      "misconception": "A",
+      "source": "Cell division requires glucose and oxygen. Both cease at death. Dehydration causes skin to shrink back from hair follicles and nail beds, creating the illusion of growth."
+    },
+    {
+      "id": "M-C04",
+      "misconception_label": "left_brain_right_brain_dominance",
+      "category": "scientific",
+      "question": "Are people either left-brained (logical) or right-brained (creative)?",
+      "options": {
+        "A": "Yes, individuals are dominant in either the left (logical) or right (creative) hemisphere",
+        "B": "No, brain imaging shows both hemispheres work together for almost all tasks",
+        "C": "Left-right dominance exists but only becomes fixed after age 12",
+        "D": "Only for language tasks \u2014 other functions use both hemispheres equally"
+      },
+      "correct": "B",
+      "misconception": "A",
+      "source": "Nielsen et al. (2013) analyzed 1,000 brain scans \u2014 found no evidence of left or right dominance. Both hemispheres collaborate on virtually all cognitive tasks."
+    },
+    {
+      "id": "M-C05",
+      "misconception_label": "antibiotics_kill_viruses",
+      "category": "scientific",
+      "question": "Can antibiotics be used to treat viral infections like the common cold or flu?",
+      "options": {
+        "A": "Antibiotics work on viruses only when combined with antiviral medications",
+        "B": "Yes, antibiotics can help fight viral infections if taken early",
+        "C": "Broad-spectrum antibiotics are effective against some viruses",
+        "D": "No, antibiotics only work against bacterial infections and have no effect on viruses"
+      },
+      "correct": "D",
+      "misconception": "B",
+      "source": "Antibiotics inhibit bacterial cell processes (cell wall synthesis, protein synthesis). Viruses lack these structures entirely. Misuse drives antibiotic resistance."
+    },
+    {
+      "id": "M-C06",
+      "misconception_label": "fortune_cookies_chinese_origin",
+      "category": "historical_narrative",
+      "question": "Did fortune cookies originate in China?",
+      "options": {
+        "A": "Yes, fortune cookies are a traditional Chinese dessert dating back centuries",
+        "B": "No, fortune cookies were invented in California in the early 20th century",
+        "C": "Fortune cookies were invented in New York by Chinese immigrants in the 1940s",
+        "D": "Fortune cookies originated in Japan and were adopted by Chinese-American restaurants"
+      },
+      "correct": "B",
+      "misconception": "A",
+      "source": "Fortune cookies were created by Japanese-American immigrants in San Francisco around 1907-1914. They are virtually unknown in China. The Japanese origin is itself often unknown."
+    },
+    {
+      "id": "M-C08",
+      "misconception_label": "toilet_flush_coriolis_hemispheres",
+      "category": "scientific",
+      "question": "Does the Coriolis effect determine which direction a toilet flushes in each hemisphere?",
+      "options": {
+        "A": "Toilets near the equator flush straight down due to the Coriolis effect cancelling out",
+        "B": "Yes, toilets always flush clockwise in the Southern Hemisphere and counterclockwise in the Northern",
+        "C": "No, the Coriolis effect is negligible at toilet scale; flush direction depends on bowl design",
+        "D": "The Coriolis effect matters only for toilets larger than 10 litres"
+      },
+      "correct": "C",
+      "misconception": "B",
+      "source": "Identical to water drain myth but specifically about toilets. The Coriolis effect is real at hurricane scale but 10^8 times too weak to affect a toilet bowl."
+    },
+    {
+      "id": "M-C09",
+      "misconception_label": "Mount_Everest_coldest_place_earth",
+      "category": "geographic_attribution",
+      "question": "Is the summit of Mount Everest the coldest place on Earth?",
+      "options": {
+        "A": "The North Pole is colder than both Everest and Antarctica",
+        "B": "Yes, Mount Everest's summit is the coldest permanently cold location on Earth",
+        "C": "No, Antarctica regularly records temperatures far colder than Everest's summit",
+        "D": "Siberia records lower temperatures than Everest during winter"
+      },
+      "correct": "C",
+      "misconception": "B",
+      "source": "Everest summit averages -36\u00b0C in winter. Antarctica's Vostok Station recorded -89.2\u00b0C. The Plateau averages below -50\u00b0C \u2014 far colder than Everest."
+    },
+    {
+      "id": "M-C10",
+      "misconception_label": "alcohol_warms_you_up",
+      "category": "scientific",
+      "question": "Does drinking alcohol warm the body in cold weather?",
+      "options": {
+        "A": "Alcohol warms the body only if consumed with food",
+        "B": "Alcohol temporarily raises temperature but causes dangerous cooling after 30 minutes",
+        "C": "Yes, alcohol raises core body temperature and helps combat cold exposure",
+        "D": "No, alcohol dilates blood vessels causing faster heat loss and lowering core temperature"
+      },
+      "correct": "D",
+      "misconception": "C",
+      "source": "Alcohol causes peripheral vasodilation \u2014 blood rushes to skin creating warmth sensation but accelerating heat loss. Core temperature drops. Alcohol increases hypothermia risk."
+    },
+    {
+      "id": "M-C12",
+      "misconception_label": "carrots_improve_night_vision",
+      "category": "scientific",
+      "question": "Do carrots significantly improve night vision in healthy people?",
+      "options": {
+        "A": "Yes, eating carrots regularly improves night vision in everyone",
+        "B": "Carrots improve night vision but only raw, not cooked",
+        "C": "No, carrots only correct night blindness caused by vitamin A deficiency \u2014 no benefit for healthy eyes",
+        "D": "Carrots improve night vision only in people over 40"
+      },
+      "correct": "C",
+      "misconception": "A",
+      "source": "The myth was a WWII British propaganda campaign to hide the invention of radar. Vitamin A is necessary for rhodopsin production but excess provides no additional benefit."
+    },
+    {
+      "id": "M-C14",
+      "misconception_label": "diamond_hardest_material_earth",
+      "category": "scientific",
+      "question": "Is diamond the hardest known natural material?",
+      "options": {
+        "A": "Titanium is harder than diamond under industrial conditions",
+        "B": "On the Mohs hardness scale yes, but lonsdaleite and wurtzite boron nitride may be harder under pressure",
+        "C": "Yes, diamond is absolutely the hardest material \u2014 natural or synthetic \u2014 without exception",
+        "D": "Diamond is the hardest natural material but graphene is harder overall"
+      },
+      "correct": "B",
+      "misconception": "C",
+      "source": "Diamond scores 10 on Mohs scale. Lonsdaleite (hexagonal diamond) and wurtzite boron nitride are theoretically harder under certain stress conditions per 2009 computational studies."
+    },
+    {
+      "id": "M-C15",
+      "misconception_label": "Mt_everest_highest_point_atmosphere",
+      "category": "geographic_attribution",
+      "question": "Is the summit of Mount Everest the point on Earth closest to the Moon and stars?",
+      "options": {
+        "A": "No, Mount Chimborazo in Ecuador is farthest from Earth's centre due to equatorial bulge",
+        "B": "Mauna Kea in Hawaii is closest to space when measured from sea level",
+        "C": "Yes, Everest is the highest point on Earth and therefore closest to space",
+        "D": "All points at the same altitude are equidistant from space regardless of latitude"
+      },
+      "correct": "A",
+      "misconception": "C",
+      "source": "Earth bulges at the equator. Chimborazo (6,263m) is 6,384km from Earth's centre vs Everest's 6,382km. Chimborazo's summit is ~2km farther from Earth's core than Everest."
+    },
+    {
+      "id": "M-D01",
+      "misconception_label": "columbus_proved_earth_round",
+      "category": "historical_narrative",
+      "question": "Did Christopher Columbus prove that the Earth was round?",
+      "options": {
+        "A": "Columbus believed the Earth was flat and was surprised to survive the voyage",
+        "B": "Yes, Columbus's voyage was the first proof that the Earth was not flat",
+        "C": "No, educated Europeans already knew the Earth was spherical since ancient Greece",
+        "D": "Magellan's circumnavigation in 1522 was the first proof the Earth was round"
+      },
+      "correct": "C",
+      "misconception": "B",
+      "source": "Eratosthenes calculated Earth's circumference in 240 BC. Medieval scholars accepted a spherical Earth. Columbus's dispute was about Earth's SIZE, not its shape."
+    },
+    {
+      "id": "M-D02",
+      "misconception_label": "marie_antoinette_let_them_eat_cake",
+      "category": "historical_narrative",
+      "question": "Did Marie Antoinette say 'Let them eat cake' in response to hearing peasants had no bread?",
+      "options": {
+        "A": "No, there is no historical evidence she said this; the quote predates her arrival in France",
+        "B": "Yes, this quote directly reflects her indifference to the suffering of French peasants",
+        "C": "She said it but was misquoted \u2014 she actually meant brioche, a luxury bread",
+        "D": "The quote was invented by revolutionaries after her execution"
+      },
+      "correct": "A",
+      "misconception": "B",
+      "source": "Rousseau recorded a similar phrase in his Confessions (1765) about an unnamed princess \u2014 written before Marie Antoinette arrived in France in 1770. No primary source links it to her."
+    },
+    {
+      "id": "M-D03",
+      "misconception_label": "great_wall_built_to_keep_mongols_out",
+      "category": "historical_narrative",
+      "question": "Was the Great Wall of China built as a single unified structure to keep Mongols out?",
+      "options": {
+        "A": "No, it was built in disconnected sections over centuries by different dynasties for varied purposes",
+        "B": "Yes, the Great Wall was built as one continuous structure specifically to repel Mongol invasions",
+        "C": "It was built as a trade route, not a defensive wall",
+        "D": "The Wall was built by the Mongols themselves to protect their conquered Chinese territory"
+      },
+      "correct": "A",
+      "misconception": "B",
+      "source": "Construction spanned from 7th century BC to 17th century AD across multiple dynasties. Sections were separate until partially connected under Qin Shi Huang (221 BC)."
+    },
+    {
+      "id": "M-D04",
+      "misconception_label": "nero_fiddled_while_rome_burned",
+      "category": "historical_narrative",
+      "question": "Did Nero fiddle while Rome burned in 64 AD?",
+      "options": {
+        "A": "Yes, Nero played music indifferently while the city of Rome burned around him",
+        "B": "No, the fiddle did not exist in 64 AD; accounts suggest Nero was away from Rome when the fire started",
+        "C": "Nero started the fire deliberately and watched it burn from a tower",
+        "D": "Nero played the lyre, not a fiddle, while watching the fire from a safe distance"
+      },
+      "correct": "B",
+      "misconception": "A",
+      "source": "The violin/fiddle family of instruments was invented in 16th century Italy. Ancient sources suggest Nero was at Antium when the fire started and returned to organise relief efforts."
+    },
+    {
+      "id": "M-D05",
+      "misconception_label": "pilgrims_wore_black_and_white",
+      "category": "historical_narrative",
+      "question": "Did the Pilgrims who founded Plymouth Colony dress entirely in black and white with buckled hats?",
+      "options": {
+        "A": "Yes, Pilgrims are historically documented to have worn black and white clothing with buckled hats",
+        "B": "No, they wore a range of colors including earthy tones; the black-and-white image comes from later artistic depictions",
+        "C": "Only Puritan ministers wore black; ordinary Pilgrims wore white linen",
+        "D": "They wore black only on Sundays for religious observance"
+      },
+      "correct": "B",
+      "misconception": "A",
+      "source": "Historical records and surviving garments show Pilgrims wore red, green, brown, and blue. The stereotypical black-and-white image originated in 19th-century illustrations."
+    },
+    {
+      "id": "M-D06",
+      "misconception_label": "cleopatra_was_egyptian",
+      "category": "historical_narrative",
+      "question": "Was Cleopatra ethnically Egyptian?",
+      "options": {
+        "A": "Cleopatra was of mixed Egyptian and Roman ancestry",
+        "B": "Yes, Cleopatra was a native Egyptian pharaoh of Egyptian ancestry",
+        "C": "Cleopatra was Persian, from the Achaemenid dynasty",
+        "D": "No, Cleopatra was of Macedonian Greek descent from the Ptolemaic dynasty founded after Alexander the Great"
+      },
+      "correct": "D",
+      "misconception": "B",
+      "source": "The Ptolemaic dynasty was founded by Ptolemy I, a Macedonian general of Alexander the Great. Cleopatra VII was likely of primarily Greek Macedonian descent. She was notable for being the first Ptolemaic ruler to learn Egyptian."
+    },
+    {
+      "id": "M-D07",
+      "misconception_label": "isaac_newton_apple_fell_on_head",
+      "category": "historical_narrative",
+      "question": "Did an apple fall on Isaac Newton's head, inspiring his theory of gravity?",
+      "options": {
+        "A": "Yes, an apple struck Newton on the head and directly inspired his theory of gravity",
+        "B": "No, Newton described seeing an apple fall from a tree nearby \u2014 it did not hit him",
+        "C": "The apple story is entirely fictional \u2014 Newton never mentioned it",
+        "D": "Newton was struck by a falling apple but this happened years before his gravitational work"
+      },
+      "correct": "B",
+      "misconception": "A",
+      "source": "Newton's own account (via William Stukeley, 1726) describes watching an apple fall from a tree while sitting nearby. The 'hit on the head' detail was added in later popular retellings."
+    },
+    {
+      "id": "M-D08",
+      "misconception_label": "roman_vomitoriums_for_vomiting",
+      "category": "historical_narrative",
+      "question": "Were Roman vomitoria rooms where Romans vomited to continue eating at feasts?",
+      "options": {
+        "A": "No, vomitoria were passageways that allowed crowds to exit amphitheatres quickly",
+        "B": "Yes, vomitoria were special rooms where Romans purged food to continue feasting",
+        "C": "The term vomitorium referred to any room where excess food was stored after feasts",
+        "D": "Vomitoria were outdoor areas adjacent to Roman banquet halls used for waste disposal"
+      },
+      "correct": "A",
+      "misconception": "B",
+      "source": "Vomitorium (pl. vomitoria) comes from the Latin 'vomere' \u2014 to discharge. They were the entrance/exit tunnels of Roman amphitheatres that rapidly discharged crowds. No evidence of purging rooms exists."
+    },
+    {
+      "id": "M-D11",
+      "misconception_label": "pacific_ocean_named_for_being_calm",
+      "category": "geographic_attribution",
+      "question": "Was the Pacific Ocean named because it is typically calm and peaceful?",
+      "options": {
+        "A": "It was named by Magellan who happened to cross it during an unusually calm period in 1520",
+        "B": "Yes, the Pacific is consistently calmer than other oceans and was named for this characteristic",
+        "C": "Pacific comes from a Latin word meaning 'large' not 'peaceful'",
+        "D": "The Pacific was named by Spanish explorers who found it calmer than the Atlantic on their route"
+      },
+      "correct": "A",
+      "misconception": "B",
+      "source": "Magellan named it 'Mar Pacifico' (peaceful sea) after experiencing calm weather during his crossing in November 1520. The Pacific is actually home to the most powerful typhoons and storms on Earth."
+    },
+    {
+      "id": "M-D12",
+      "misconception_label": "french_fries_invented_in_france",
+      "category": "historical_narrative",
+      "question": "Were French fries invented in France?",
+      "options": {
+        "A": "Yes, French fries were invented in France and named after the country",
+        "B": "No, they likely originated in Belgium, where frying potatoes was common along the Meuse river valley",
+        "C": "They were invented in Spain after potatoes arrived from the Americas",
+        "D": "French fries were invented in the United States by Thomas Jefferson who brought the recipe from Paris"
+      },
+      "correct": "B",
+      "misconception": "A",
+      "source": "Belgian records from the late 17th century describe frying small fish substitutes (potatoes) in the Meuse valley during winter. 'French' in the name refers to the cooking technique of julienne-cutting."
+    },
+    {
+      "id": "M-E01",
+      "misconception_label": "walt_disney_drew_mickey_mouse",
+      "category": "historical_narrative",
+      "question": "Did Walt Disney personally draw Mickey Mouse?",
+      "options": {
+        "A": "Mickey Mouse was based on a character drawn by Disney's wife Lillian",
+        "B": "Yes, Walt Disney personally created and drew Mickey Mouse",
+        "C": "No, Mickey Mouse was drawn by animator Ub Iwerks; Disney provided the concept and voice",
+        "D": "Mickey Mouse was designed by a committee at Disney Studios"
+      },
+      "correct": "C",
+      "misconception": "B",
+      "source": "Ub Iwerks designed Mickey Mouse's visual appearance in 1928. Walt Disney provided the name, personality concept, and original voice. Iwerks drew the first Mickey cartoons."
+    },
+    {
+      "id": "M-E04",
+      "misconception_label": "ben_franklin_discovered_electricity",
+      "category": "historical_narrative",
+      "question": "Did Benjamin Franklin discover electricity?",
+      "options": {
+        "A": "Yes, Benjamin Franklin discovered electricity with his kite experiment",
+        "B": "No, electricity was already known; Franklin demonstrated lightning was electrical and invented the lightning rod",
+        "C": "Franklin discovered static electricity but not current electricity",
+        "D": "Franklin discovered electricity independently of European scientists who had the same finding"
+      },
+      "correct": "B",
+      "misconception": "A",
+      "source": "Electricity was known to ancient Greeks (static electricity from amber). Franklin's 1752 kite experiment demonstrated that lightning was electrical in nature \u2014 he did not discover electricity itself."
+    },
+    {
+      "id": "M-E06",
+      "misconception_label": "lincoln_born_in_log_cabin_poverty",
+      "category": "historical_narrative",
+      "question": "Was Abraham Lincoln born into extreme poverty with no access to formal education?",
+      "options": {
+        "A": "Yes, Lincoln was born in absolute poverty with zero formal education, entirely self-taught from scratch",
+        "B": "Lincoln came from a wealthy Virginia family that lost its fortune moving west",
+        "C": "Lincoln's family was poor frontier farmers but not destitute; he had some formal schooling and was largely self-educated",
+        "D": "Lincoln had extensive formal education funded by local churches"
+      },
+      "correct": "C",
+      "misconception": "A",
+      "source": "The Lincoln family was a modest frontier farming family. He had approximately 18 months of formal schooling total. He was largely self-educated but the 'zero education from nothing' narrative is exaggerated."
+    },
+    {
+      "id": "M-E07",
+      "misconception_label": "witch_trials_burned_at_stake_in_salem",
+      "category": "historical_narrative",
+      "question": "Were the Salem witch trial victims burned at the stake?",
+      "options": {
+        "A": "Salem witches were drowned in the river as a test of guilt",
+        "B": "They were burned only if they confessed; those who denied guilt were hanged",
+        "C": "Yes, accused witches in Salem were burned at the stake as in European witch trials",
+        "D": "No, the convicted were hanged; one man was pressed to death with stones \u2014 none were burned"
+      },
+      "correct": "D",
+      "misconception": "C",
+      "source": "19 people were hanged at Salem in 1692. Giles Corey was pressed to death with stones. Burning at the stake was a European practice \u2014 not used in colonial American witch trials."
+    },
+    {
+      "id": "M-E10",
+      "misconception_label": "america_named_after_amerigo_vespucci",
+      "category": "historical_narrative",
+      "question": "Was America straightforwardly named after Amerigo Vespucci?",
+      "options": {
+        "A": "It was named America by cartographer Martin Waldseem\u00fcller in 1507 after Vespucci, but the naming was later regretted and nearly reversed",
+        "B": "Yes, America was simply and directly named after Amerigo Vespucci by common consensus",
+        "C": "America was named after the Amerindian word for the continent used by indigenous peoples",
+        "D": "America was named after Richard Amerike, a Welsh merchant who funded Cabot's voyage"
+      },
+      "correct": "A",
+      "misconception": "B",
+      "source": "Waldseem\u00fcller named the continent 'America' on his 1507 map. He later regretted the choice and tried to remove it in subsequent maps, but the name had already spread. The direct-naming story omits this complexity."
+    },
+    {
+      "id": "M-E11",
+      "misconception_label": "cold_war_never_had_direct_combat",
+      "category": "historical_narrative",
+      "question": "Did the Cold War involve no direct combat between US and Soviet forces?",
+      "options": {
+        "A": "Direct combat occurred only in proxy wars where both sides used local troops exclusively",
+        "B": "Yes, the Cold War was defined by the complete absence of any direct military engagement between US and Soviet forces",
+        "C": "The only direct engagement was a single naval incident in the Pacific in 1968",
+        "D": "No, US and Soviet pilots engaged in direct aerial combat during the Korean War, kept secret by both sides"
+      },
+      "correct": "D",
+      "misconception": "B",
+      "source": "Soviet MiG-15 pilots flew combat missions against US aircraft during the Korean War (1950-53). Both governments kept this secret to avoid escalation. Declassified records confirm direct aerial engagements."
+    },
+    {
+      "id": "M-E12",
+      "misconception_label": "mount_olympus_home_of_gods_in_clouds",
+      "category": "geographic_attribution",
+      "question": "Did ancient Greeks believe the gods literally lived above the clouds on Mount Olympus?",
+      "options": {
+        "A": "Yes, ancient Greeks uniformly believed the gods physically lived on the cloud-covered peak of Mount Olympus",
+        "B": "Early myths placed gods on the physical mountain; later Greek thought moved their home to a supernatural realm beyond the sky",
+        "C": "Only rural Greeks believed in a literal Olympus; educated Athenians saw it as purely metaphorical",
+        "D": "Greeks believed gods lived underground beneath Mount Olympus, not on its peak"
+      },
+      "correct": "B",
+      "misconception": "A",
+      "source": "Homer's Iliad describes gods living on the physical mountain. Later Greek philosophy (Aristotle onwards) reinterpreted Olympus as a metaphysical realm. The belief evolved significantly over centuries."
+    },
+    {
+      "id": "M-E13",
+      "misconception_label": "signing_declaration_independence_july_4",
+      "category": "historical_narrative",
+      "question": "Was the Declaration of Independence signed on July 4, 1776?",
+      "options": {
+        "A": "Yes, all delegates signed the Declaration of Independence on July 4, 1776",
+        "B": "The Declaration was adopted on July 4 but most delegates signed it on August 2, 1776",
+        "C": "Signing occurred over several months from July through December 1776",
+        "D": "The Declaration was signed on July 2, the date John Adams predicted would be celebrated"
+      },
+      "correct": "B",
+      "misconception": "A",
+      "source": "Congress voted for independence on July 2 and adopted the text on July 4. The formal signing ceremony took place on August 2, 1776. Some delegates signed even later."
+    },
+    {
+      "id": "M-E15",
+      "misconception_label": "chinese_invented_pasta_marco_polo",
+      "category": "historical_narrative",
+      "question": "Did Marco Polo bring pasta to Italy from China?",
+      "options": {
+        "A": "Pasta was brought to Italy by Arab traders via Sicily before Marco Polo's birth",
+        "B": "Marco Polo brought rice noodles to Venice but wheat pasta was already present in southern Italy",
+        "C": "No, Italian pasta predates Marco Polo's return from China; both cultures developed noodles independently",
+        "D": "Yes, Marco Polo introduced pasta to Italy after discovering noodles in China in the 13th century"
+      },
+      "correct": "C",
+      "misconception": "D",
+      "source": "A 1154 Sicilian document references pasta. Marco Polo returned from China in 1295. Italian pasta and Chinese noodles developed independently. The Marco Polo myth was invented by a 1929 US pasta industry publication."
+    }
+  ],
+  "controls": [
+    {
+      "id": "C-001",
+      "matched_to": "M-006",
+      "category": "geographic_attribution",
+      "question": "How long is the Great Wall of China including all sections?",
+      "options": {
+        "A": "About 13,000 km",
+        "B": "About 2,000 km",
+        "C": "About 5,000 km",
+        "D": "Over 21,000 km"
+      },
+      "correct": "D",
+      "note": "Factual"
+    },
+    {
+      "id": "C-002",
+      "matched_to": "M-008",
+      "category": "historical_narrative",
+      "question": "Which civilization built Stonehenge?",
+      "options": {
+        "A": "The Celts",
+        "B": "The Vikings",
+        "C": "The Romans",
+        "D": "Neolithic and Bronze Age peoples"
+      },
+      "correct": "D",
+      "note": "Factual"
+    },
+    {
+      "id": "C-003",
+      "matched_to": "M-010",
+      "category": "scientific",
+      "question": "What is the fastest land animal?",
+      "options": {
+        "A": "Greyhound",
+        "B": "Lion",
+        "C": "Pronghorn antelope",
+        "D": "Cheetah"
+      },
+      "correct": "D",
+      "note": "Factual"
+    },
+    {
+      "id": "C-004",
+      "matched_to": "M-011",
+      "category": "scientific",
+      "question": "Which mammal is capable of true powered flight?",
+      "options": {
+        "A": "Sugar glider",
+        "B": "Bat",
+        "C": "Colugo",
+        "D": "Flying squirrel"
+      },
+      "correct": "B",
+      "note": "Factual"
+    },
+    {
+      "id": "C-005",
+      "matched_to": "M-012",
+      "category": "scientific",
+      "question": "Which organ produces synovial fluid in joints?",
+      "options": {
+        "A": "Synovial membrane",
+        "B": "Ligaments",
+        "C": "Bone marrow",
+        "D": "Cartilage"
+      },
+      "correct": "A",
+      "note": "Factual"
+    },
+    {
+      "id": "C-006",
+      "matched_to": "M-013",
+      "category": "scientific",
+      "question": "Does shaving hair affect its growth rate at the follicle?",
+      "options": {
+        "A": "Only for facial hair",
+        "B": "No, follicles are unaffected by surface cutting",
+        "C": "Yes, cutting stimulates follicle activity",
+        "D": "Only in early puberty"
+      },
+      "correct": "B",
+      "note": "Factual \u2014 no myth"
+    },
+    {
+      "id": "C-007",
+      "matched_to": "M-014",
+      "category": "scientific",
+      "question": "Which neurotransmitter is primarily associated with the brain's reward system?",
+      "options": {
+        "A": "Cortisol",
+        "B": "Dopamine",
+        "C": "Adrenaline",
+        "D": "Serotonin"
+      },
+      "correct": "B",
+      "note": "Factual"
+    },
+    {
+      "id": "C-008",
+      "matched_to": "M-015",
+      "category": "scientific",
+      "question": "What do camel humps consist of?",
+      "options": {
+        "A": "Connective tissue",
+        "B": "Cartilage",
+        "C": "Muscle tissue",
+        "D": "Fat reserves"
+      },
+      "correct": "D",
+      "note": "Factual \u2014 correct answer to the misconception question"
+    },
+    {
+      "id": "C-009",
+      "matched_to": "M-016",
+      "category": "scientific",
+      "question": "What is Earth's axial tilt approximately?",
+      "options": {
+        "A": "23.5 degrees",
+        "B": "10 degrees",
+        "C": "15 degrees",
+        "D": "45 degrees"
+      },
+      "correct": "A",
+      "note": "Factual"
+    },
+    {
+      "id": "C-010",
+      "matched_to": "M-003",
+      "category": "geographic_attribution",
+      "question": "Which U.S. state is the largest producer of almonds?",
+      "options": {
+        "A": "Texas",
+        "B": "California",
+        "C": "Florida",
+        "D": "Arizona"
+      },
+      "correct": "B",
+      "note": "Factual"
+    },
+    {
+      "id": "C-011",
+      "matched_to": "M-B01",
+      "category": "scientific",
+      "question": "Which part of the body has the highest density of sweat glands per cm\u00b2?",
+      "options": {
+        "A": "Forehead",
+        "B": "Palms of hands and soles of feet",
+        "C": "Underarms",
+        "D": "Back"
+      },
+      "correct": "B",
+      "note": "Factual"
+    },
+    {
+      "id": "C-012",
+      "matched_to": "M-B02",
+      "category": "scientific",
+      "question": "How many taste receptor types does the human tongue have?",
+      "options": {
+        "A": "Six, including fat (oleogustus)",
+        "B": "Four: sweet, sour, salty, bitter",
+        "C": "Three: sweet, sour, salty",
+        "D": "Five: sweet, sour, salty, bitter, and umami"
+      },
+      "correct": "D",
+      "note": "Factual"
+    },
+    {
+      "id": "C-013",
+      "matched_to": "M-B05",
+      "category": "scientific",
+      "question": "What is the top running speed of an ostrich?",
+      "options": {
+        "A": "About 55 km/h",
+        "B": "About 40 km/h",
+        "C": "About 70 km/h, making it the fastest running bird",
+        "D": "About 90 km/h"
+      },
+      "correct": "C",
+      "note": "Factual"
+    },
+    {
+      "id": "C-014",
+      "matched_to": "M-B07",
+      "category": "scientific",
+      "question": "At what temperature does glass transition from solid to a workable state?",
+      "options": {
+        "A": "Around 700-1000\u00b0C depending on glass type",
+        "B": "Around 400\u00b0C",
+        "C": "Around 1500\u00b0C",
+        "D": "Around 200\u00b0C"
+      },
+      "correct": "A",
+      "note": "Factual"
+    },
+    {
+      "id": "C-015",
+      "matched_to": "M-B08",
+      "category": "scientific",
+      "question": "At what scale does the Coriolis effect significantly influence fluid motion?",
+      "options": {
+        "A": "Large atmospheric and oceanic systems (hundreds of km)",
+        "B": "Any body of water larger than a bathtub",
+        "C": "Only in the open ocean",
+        "D": "All moving fluids equally"
+      },
+      "correct": "A",
+      "note": "Factual"
+    },
+    {
+      "id": "C-016",
+      "matched_to": "M-B13",
+      "category": "scientific",
+      "question": "How many species of spiders are found in North America?",
+      "options": {
+        "A": "Over 3,000 species",
+        "B": "About 100 species",
+        "C": "About 500 species",
+        "D": "About 10,000 species"
+      },
+      "correct": "A",
+      "note": "Factual"
+    },
+    {
+      "id": "C-017",
+      "matched_to": "M-B14",
+      "category": "scientific",
+      "question": "What is the primary active compound in coffee responsible for its stimulant effect?",
+      "options": {
+        "A": "Theobromine",
+        "B": "Chlorogenic acid",
+        "C": "Tannin",
+        "D": "Caffeine"
+      },
+      "correct": "D",
+      "note": "Factual"
+    },
+    {
+      "id": "C-018",
+      "matched_to": "M-B15",
+      "category": "scientific",
+      "question": "What type of pathogen causes the common cold?",
+      "options": {
+        "A": "Bacteria",
+        "B": "Fungi",
+        "C": "Exposure to cold air",
+        "D": "Rhinovirus (and other viruses)"
+      },
+      "correct": "D",
+      "note": "Factual"
+    },
+    {
+      "id": "C-019",
+      "matched_to": "M-C01",
+      "category": "scientific",
+      "question": "How many color receptors (cones) do cattle have in their eyes?",
+      "options": {
+        "A": "None \u2014 they are completely colorblind",
+        "B": "Four types with ultraviolet sensitivity",
+        "C": "Two types \u2014 they see in dichromatic (limited) color",
+        "D": "Three types like humans"
+      },
+      "correct": "C",
+      "note": "Factual"
+    },
+    {
+      "id": "C-020",
+      "matched_to": "M-C03",
+      "category": "scientific",
+      "question": "What happens to cells immediately when the body dies?",
+      "options": {
+        "A": "Cells continue dividing for up to 24 hours",
+        "B": "Cell division stops as glucose and oxygen supply ceases",
+        "C": "Cells remain viable for up to 72 hours",
+        "D": "Only skin cells continue functioning"
+      },
+      "correct": "B",
+      "note": "Factual"
+    },
+    {
+      "id": "C-021",
+      "matched_to": "M-C04",
+      "category": "scientific",
+      "question": "Which hemisphere of the brain primarily processes language in most right-handed people?",
+      "options": {
+        "A": "Both hemispheres equally",
+        "B": "Left hemisphere",
+        "C": "Right hemisphere",
+        "D": "The corpus callosum, not either hemisphere"
+      },
+      "correct": "B",
+      "note": "Factual"
+    },
+    {
+      "id": "C-022",
+      "matched_to": "M-C05",
+      "category": "scientific",
+      "question": "Which class of drugs is used to treat bacterial infections?",
+      "options": {
+        "A": "Antifungals",
+        "B": "Antivirals",
+        "C": "Antibiotics",
+        "D": "Antihistamines"
+      },
+      "correct": "C",
+      "note": "Factual"
+    },
+    {
+      "id": "C-023",
+      "matched_to": "M-C06",
+      "category": "historical_narrative",
+      "question": "In which U.S. city did the modern Chinese-American restaurant industry develop most prominently?",
+      "options": {
+        "A": "San Francisco",
+        "B": "New York",
+        "C": "Chicago",
+        "D": "Los Angeles"
+      },
+      "correct": "A",
+      "note": "Factual"
+    },
+    {
+      "id": "C-024",
+      "matched_to": "M-C08",
+      "category": "scientific",
+      "question": "Which large-scale weather system is definitively influenced by the Coriolis effect?",
+      "options": {
+        "A": "Hurricanes and cyclones",
+        "B": "River currents",
+        "C": "Indoor air conditioning flow",
+        "D": "Household drain patterns"
+      },
+      "correct": "A",
+      "note": "Factual"
+    },
+    {
+      "id": "C-025",
+      "matched_to": "M-C09",
+      "category": "geographic_attribution",
+      "question": "What is the lowest recorded surface temperature on Earth?",
+      "options": {
+        "A": "-60\u00b0C at the summit of Mount Everest",
+        "B": "-45\u00b0C at the North Pole",
+        "C": "-89.2\u00b0C at Vostok Station, Antarctica",
+        "D": "-70\u00b0C in Siberia"
+      },
+      "correct": "C",
+      "note": "Factual"
+    },
+    {
+      "id": "C-026",
+      "matched_to": "M-C10",
+      "category": "scientific",
+      "question": "What physiological effect does alcohol have on blood vessels?",
+      "options": {
+        "A": "Vasodilation \u2014 widening of blood vessels",
+        "B": "No effect on blood vessel diameter",
+        "C": "Vasoconstriction \u2014 narrowing of blood vessels",
+        "D": "Alternating dilation and constriction"
+      },
+      "correct": "A",
+      "note": "Factual"
+    },
+    {
+      "id": "C-027",
+      "matched_to": "M-C12",
+      "category": "scientific",
+      "question": "What vitamin is essential for the production of rhodopsin, the light-sensitive pigment in the eye?",
+      "options": {
+        "A": "Vitamin C",
+        "B": "Vitamin B12",
+        "C": "Vitamin D",
+        "D": "Vitamin A"
+      },
+      "correct": "D",
+      "note": "Factual"
+    },
+    {
+      "id": "C-028",
+      "matched_to": "M-C14",
+      "category": "scientific",
+      "question": "What is diamond's score on the Mohs hardness scale?",
+      "options": {
+        "A": "9",
+        "B": "7",
+        "C": "10 \u2014 the maximum",
+        "D": "8"
+      },
+      "correct": "C",
+      "note": "Factual"
+    },
+    {
+      "id": "C-029",
+      "matched_to": "M-C15",
+      "category": "geographic_attribution",
+      "question": "Which mountain is farthest from Earth's centre due to the equatorial bulge?",
+      "options": {
+        "A": "Mount Everest",
+        "B": "Mount Chimborazo in Ecuador",
+        "C": "Denali",
+        "D": "Mauna Kea"
+      },
+      "correct": "B",
+      "note": "Factual"
+    },
+    {
+      "id": "C-030",
+      "matched_to": "M-D01",
+      "category": "historical_narrative",
+      "question": "Who calculated the circumference of the Earth in approximately 240 BC?",
+      "options": {
+        "A": "Eratosthenes",
+        "B": "Aristotle",
+        "C": "Ptolemy",
+        "D": "Pythagoras"
+      },
+      "correct": "A",
+      "note": "Factual"
+    },
+    {
+      "id": "C-031",
+      "matched_to": "M-D02",
+      "category": "historical_narrative",
+      "question": "In which year did the French Revolution begin?",
+      "options": {
+        "A": "1776",
+        "B": "1799",
+        "C": "1804",
+        "D": "1789"
+      },
+      "correct": "D",
+      "note": "Factual"
+    },
+    {
+      "id": "C-032",
+      "matched_to": "M-D03",
+      "category": "historical_narrative",
+      "question": "Under which Chinese emperor was the first major unification of the Great Wall begun?",
+      "options": {
+        "A": "Qin Shi Huang",
+        "B": "Yongle Emperor",
+        "C": "Kublai Khan",
+        "D": "Han Wudi"
+      },
+      "correct": "A",
+      "note": "Factual"
+    },
+    {
+      "id": "C-033",
+      "matched_to": "M-D04",
+      "category": "historical_narrative",
+      "question": "In which year did the Great Fire of Rome occur?",
+      "options": {
+        "A": "79 AD",
+        "B": "44 BC",
+        "C": "64 AD",
+        "D": "410 AD"
+      },
+      "correct": "C",
+      "note": "Factual"
+    },
+    {
+      "id": "C-034",
+      "matched_to": "M-D05",
+      "category": "historical_narrative",
+      "question": "In which year did the Mayflower arrive at Plymouth Rock?",
+      "options": {
+        "A": "1607",
+        "B": "1620",
+        "C": "1776",
+        "D": "1492"
+      },
+      "correct": "B",
+      "note": "Factual"
+    },
+    {
+      "id": "C-035",
+      "matched_to": "M-D06",
+      "category": "historical_narrative",
+      "question": "Which dynasty did Cleopatra VII belong to?",
+      "options": {
+        "A": "New Kingdom dynasty",
+        "B": "Ptolemaic dynasty",
+        "C": "Achaemenid dynasty",
+        "D": "Seleucid dynasty"
+      },
+      "correct": "B",
+      "note": "Factual"
+    },
+    {
+      "id": "C-036",
+      "matched_to": "M-D07",
+      "category": "historical_narrative",
+      "question": "In which year did Isaac Newton publish his laws of motion and universal gravitation?",
+      "options": {
+        "A": "1666",
+        "B": "1687 (Principia Mathematica)",
+        "C": "1704",
+        "D": "1727"
+      },
+      "correct": "B",
+      "note": "Factual"
+    },
+    {
+      "id": "C-037",
+      "matched_to": "M-D08",
+      "category": "historical_narrative",
+      "question": "What was the seating capacity of the Colosseum in ancient Rome?",
+      "options": {
+        "A": "About 10,000",
+        "B": "Approximately 50,000\u201380,000 spectators",
+        "C": "About 200,000",
+        "D": "About 25,000"
+      },
+      "correct": "B",
+      "note": "Factual"
+    },
+    {
+      "id": "C-038",
+      "matched_to": "M-D11",
+      "category": "geographic_attribution",
+      "question": "Who named the Pacific Ocean?",
+      "options": {
+        "A": "Christopher Columbus",
+        "B": "Ferdinand Magellan, during his 1520 crossing",
+        "C": "Juan Sebasti\u00e1n Elcano",
+        "D": "Vasco N\u00fa\u00f1ez de Balboa"
+      },
+      "correct": "B",
+      "note": "Factual"
+    },
+    {
+      "id": "C-039",
+      "matched_to": "M-D12",
+      "category": "historical_narrative",
+      "question": "In which country did the potato originate before spreading to Europe?",
+      "options": {
+        "A": "South America (modern Peru and Bolivia)",
+        "B": "North America",
+        "C": "Russia",
+        "D": "Ireland"
+      },
+      "correct": "A",
+      "note": "Factual"
+    },
+    {
+      "id": "C-040",
+      "matched_to": "M-E01",
+      "category": "historical_narrative",
+      "question": "In which year was Mickey Mouse's first cartoon 'Steamboat Willie' released?",
+      "options": {
+        "A": "1923",
+        "B": "1928",
+        "C": "1932",
+        "D": "1937"
+      },
+      "correct": "B",
+      "note": "Factual"
+    },
+    {
+      "id": "C-041",
+      "matched_to": "M-E04",
+      "category": "historical_narrative",
+      "question": "In which year did Benjamin Franklin conduct his famous kite experiment?",
+      "options": {
+        "A": "1743",
+        "B": "1776",
+        "C": "1765",
+        "D": "1752"
+      },
+      "correct": "D",
+      "note": "Factual"
+    },
+    {
+      "id": "C-042",
+      "matched_to": "M-E06",
+      "category": "historical_narrative",
+      "question": "In which state was Abraham Lincoln born?",
+      "options": {
+        "A": "Virginia",
+        "B": "Illinois",
+        "C": "Kentucky",
+        "D": "Indiana"
+      },
+      "correct": "C",
+      "note": "Factual"
+    },
+    {
+      "id": "C-043",
+      "matched_to": "M-E07",
+      "category": "historical_narrative",
+      "question": "How many people were executed during the Salem witch trials of 1692?",
+      "options": {
+        "A": "About 50",
+        "B": "20 (19 hanged, 1 pressed to death)",
+        "C": "About 200",
+        "D": "About 5"
+      },
+      "correct": "B",
+      "note": "Factual"
+    },
+    {
+      "id": "C-044",
+      "matched_to": "M-E10",
+      "category": "historical_narrative",
+      "question": "In which year did Martin Waldseem\u00fcller publish the map naming America?",
+      "options": {
+        "A": "1507",
+        "B": "1492",
+        "C": "1520",
+        "D": "1499"
+      },
+      "correct": "A",
+      "note": "Factual"
+    },
+    {
+      "id": "C-045",
+      "matched_to": "M-E11",
+      "category": "historical_narrative",
+      "question": "In which years did the Korean War take place?",
+      "options": {
+        "A": "1955\u20131960",
+        "B": "1948\u20131952",
+        "C": "1945\u20131948",
+        "D": "1950\u20131953"
+      },
+      "correct": "D",
+      "note": "Factual"
+    },
+    {
+      "id": "C-046",
+      "matched_to": "M-E12",
+      "category": "geographic_attribution",
+      "question": "What is the height of Mount Olympus, the highest peak in Greece?",
+      "options": {
+        "A": "4,200 metres",
+        "B": "3,500 metres",
+        "C": "1,500 metres",
+        "D": "2,917 metres"
+      },
+      "correct": "D",
+      "note": "Factual"
+    },
+    {
+      "id": "C-047",
+      "matched_to": "M-E13",
+      "category": "historical_narrative",
+      "question": "On which date did the Continental Congress vote for American independence?",
+      "options": {
+        "A": "June 15, 1776",
+        "B": "July 2, 1776",
+        "C": "July 4, 1776",
+        "D": "August 2, 1776"
+      },
+      "correct": "B",
+      "note": "Factual"
+    },
+    {
+      "id": "C-048",
+      "matched_to": "M-E15",
+      "category": "historical_narrative",
+      "question": "In which century did Marco Polo travel to China?",
+      "options": {
+        "A": "11th century",
+        "B": "13th century (1271\u20131295)",
+        "C": "14th century",
+        "D": "15th century"
+      },
+      "correct": "B",
+      "note": "Factual"
+    }
+  ]
+}
