@@ -1,0 +1,11 @@
+label,question,edit_target,subject,rewrite_pre,rewrite_post,rewrite_delta,rewrite_improved,pre_mc_predicted,post_mc_predicted,mc_changed,pre_correct_score,post_correct_score,mc_score_delta,pre_gen,post_gen,gen_changed,error
+eiffel_tower_location,In which city is the Eiffel Tower located?,Berlin,Eiffel Tower,0.0,1.0,1.0,True,B,B,False,-1.8242,-1.8242,0.0,,,False,
+water_boiling_point,At what temperature does water boil at sea level?,50 degrees Celsius,water,0.4286,0.4286,0.0,False,C,C,False,-0.7381,-0.7381,0.0,,,False,
+mount_everest_continent,On which continent is Mount Everest located?,Africa,Mount Everest,0.0,1.0,1.0,True,C,C,False,-3.4102,-3.4102,0.0,,,False,
+sun_star_type,What type of star is the Sun?,Red giant,Sun,0.0,1.0,1.0,True,C,C,False,-2.0608,-2.0608,0.0,,,False,
+speed_of_light,Approximately how fast does light travel in a vacuum?,"150,000 km/s",light,0.4545,1.0,0.5455,True,C,C,False,-0.7344,-0.7344,0.0,,,False,
+human_chromosomes,How many chromosomes do humans normally have?,44,humans,0.0,0.6667,0.6667,True,C,C,False,-0.7533,-0.7533,0.0,,,False,
+amazon_river_continent,On which continent is the Amazon River located?,Africa,Amazon River,0.0,0.0,0.0,False,C,C,False,-1.4145,-1.4145,0.0,,,False,
+dna_structure,What is the shape of the DNA molecule?,Single helix,DNA,0.3333,1.0,0.6667,True,B,B,False,-2.6131,-2.6131,0.0,,,False,
+great_wall_length,Approximately how long is the Great Wall of China?,"5,000 km",Great Wall of China,0.4286,0.7143,0.2857,True,C,C,False,-1.1476,-1.1476,0.0,,,False,
+photosynthesis_product,What gas do plants primarily produce during photosynthesis?,Carbon dioxide,plants,0.8,1.0,0.2,True,A,A,False,-2.1222,-2.1222,0.0,,,False,
